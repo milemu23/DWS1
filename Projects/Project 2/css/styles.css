@@ -1,0 +1,100 @@
+html {
+	background-color: #e4dfdc;
+	}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+	
+body {
+	background-color: #fff;
+	width: 70%;
+	margin: 0 auto;
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	box-shadow: 0 0 10px rgba(82, 67, 62, 0.5);
+	}
+
+header {
+	text-align: center;
+	padding: 20px 0;
+	background-color: #99857a;
+	}
+
+.sectionHeader {
+	height: 50px;
+	background-color: #b22422;
+	text-align: center;
+	color: #fff;
+	clear: left;
+	}
+	
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	padding: 8px 0;
+	}
+	
+h3 {
+	font-weight: 400;
+	}	
+	
+#navigation {
+	background-color: #52433e;
+	height: 50px;
+	text-align: center;
+	padding: 20px 0 0;
+	font-size: 1.15em;
+	margin: 0;
+	}
+
+	
+#navigation li {
+	display: inline;
+	margin: 0 30px;
+	}
+	
+#navigation a {
+	color: #fff;
+	text-decoration: none;
+	}
+
+#navigation a:hover {
+	color: #e5cb54;
+	}
+	
+a {
+	color: #e5cb54;
+	text-decoration: none;
+	}
+	
+a:hover {
+	color: #37243d;
+	text-decoration: underline;
+	}
+	
+#contactSection {
+	background-color: 99857a;
+	padding: 40px;
+	line-height: 1.7em;
+	}
+	
+#historySection {
+	background-color: #f1e3c5;
+	margin: 0;
+	padding: 40px;
+	line-height: 1.4em;
+	}
+	
+figcaption {
+	text-align: center;
+	}
+	
+figure {
+	width: 150px;
+	display: inline;
+	float:left;
+	}
+	
+#photoSection {
+	margin: 0 auto;
+	}
