@@ -1,10 +1,6 @@
 html {
 	background-color: #e4dfdc;
 	}
-
-h1, h2, h3, h4, h5, h6, p {
-	margin: 0;
-}
 	
 body {
 	background-color: #fff;
@@ -15,18 +11,15 @@ body {
 	box-shadow: 0 0 10px rgba(82, 67, 62, 0.5);
 	}
 
-header {
-	text-align: center;
-	padding: 20px 0;
-	background-color: #99857a;
-	}
 
-.sectionHeader {
-	height: 50px;
-	background-color: #b22422;
-	text-align: center;
-	color: #fff;
-	clear: left;
+/****** HEADINGS ******/
+	
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+h1 {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 	}
 	
 h1, h2, h3, h4, h5, h6 {
@@ -36,8 +29,49 @@ h1, h2, h3, h4, h5, h6 {
 	
 h3 {
 	font-weight: 400;
-	}	
+	}
+
+
+/****** HEADER ******/
+
+header {
+	text-align: center;
+	padding: 20px 0;
+	background-color: #99857a;
+	}
+
+
+/****** SECTION HEADERS ******/
+.sectionHeader {
+	height: 50px;
+	background-color: #b22422;
+	text-align: center;
+	color: #fff;
+	clear: left;
+	}
 	
+/****** SECTIONS ******/	
+
+#contactSection {
+	background-color: 99857a;
+	padding: 40px;
+	line-height: 1.7em;
+	}
+	
+#historySection {
+	background-color: #f1e3c5;
+	margin: 0;
+	padding: 40px;
+	line-height: 1.4em;
+	}
+
+#photoSection {
+	margin: 0 auto;
+	}
+	
+
+/****** NAVIGATION ******/
+
 #navigation {
 	background-color: #52433e;
 	height: 50px;
@@ -45,8 +79,8 @@ h3 {
 	padding: 20px 0 0;
 	font-size: 1.15em;
 	margin: 0;
+	border-top: 10px solid #e5cb54;
 	}
-
 	
 #navigation li {
 	display: inline;
@@ -62,7 +96,10 @@ h3 {
 	color: #e5cb54;
 	}
 	
-a {
+	
+/****** LINKS ******/	
+	
+a, a:active {
 	color: #e5cb54;
 	text-decoration: none;
 	}
@@ -72,19 +109,13 @@ a:hover {
 	text-decoration: underline;
 	}
 	
-#contactSection {
-	background-color: 99857a;
-	padding: 40px;
-	line-height: 1.7em;
+a:visited {
+	color: #b22422;
 	}
 	
-#historySection {
-	background-color: #f1e3c5;
-	margin: 0;
-	padding: 40px;
-	line-height: 1.4em;
-	}
-	
+
+/****** FIGURES/IMAGES ******/
+
 figcaption {
 	text-align: center;
 	}
@@ -94,7 +125,13 @@ figure {
 	display: inline;
 	float:left;
 	}
+
+#photoSection img {
+	border-radius: 20px;
+	}
 	
-#photoSection {
-	margin: 0 auto;
+/****** LISTS ******/
+
+ol {
+	list-style-type: square;
 	}
