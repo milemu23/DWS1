@@ -91,7 +91,7 @@ a:hover, a#current-page {
 	height: 220px;
 	float: left;
 	padding: 10px;
-	background-image: url("../images/shadow.png") no-repeat bottom;
+	background: url("../images/shadow.png") no-repeat bottom;
 }
 
 figure {
