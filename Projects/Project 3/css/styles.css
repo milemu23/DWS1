@@ -107,9 +107,13 @@ h3 {
 	
 /****** LINKS ******/	
 	
-a, a:active {
+a:link {
 	color: #e5cb54;
 	text-decoration: none;
+	}
+	
+a:visited {
+	color: #b22422;
 	}
 	
 a:hover {
@@ -117,8 +121,9 @@ a:hover {
 	text-decoration: underline;
 	}
 	
-a:visited {
-	color: #b22422;
+a:active {
+	color: #e5cb54;
+	text-decoration: none;
 	}
 	
 
