@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
 	color: #fff;
-	margin-top: 250px;
+	padding-top: 250px;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 	
@@ -39,6 +39,7 @@ h2 {
 	
 h3 {
 	font-weight: 400;
+	margin: 0 4%;
 }
 
 
@@ -87,22 +88,28 @@ a:active {
 /****** SECTIONS ******/	
 
 #contactSection {
-	padding: 40px;
 	line-height: 1.7em;
 	overflow: auto;
+	margin: 0 8%;
+	padding: 20px 0;
 }
 	
 #historySection {
 	line-height: 1.4em;
 	padding: 20px;
 }
-	
+
+#servicesSection, #photoSection {
+	margin: 0 8%;
+	padding: 20px 0;
+}
+
 
 /****** NAVIGATION ******/
 
 #navigation {
 	background-color: #52433e;
-	height: 70px;
+	height: 60px;
 	text-align: center;
 	padding: 90px 0 0;
 	font-size: 1.15em;
@@ -161,6 +168,7 @@ li#contactIcon {
 
 figcaption {
 	text-align: center;
+	padding: 0 0 20px 0;
 }
 	
 figure {
@@ -185,22 +193,25 @@ ol {
 
 #content {
 	width: 100%;
-	overflow: auto;
+	overflow: hidden;
+	margin: 0 8%;
 }
 
 #columnTop {
 	width:100%;
 	float:left;
-}
-
-#columnLeft, #columnRight {
-	width: 40%;
-	float:left;
-	padding: 0 5%;
-	margin: 15px 0;
+	padding: 10px;
 }
 
 #columnLeft {
 	clear:left;
 }
+
+#columnLeft, #columnRight {
+	width: 40%;
+	float:left;
+	padding: 10px;
+}
+
+
 	
