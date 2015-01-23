@@ -4,12 +4,15 @@ html {
 }
 	
 body {
-	background-color: #f1e3c5;
+	background: #f1e3c5; /* fallback */
+	background: linear-gradient(#9b886b, #f1e3c5); /* standard */
+	background: -webkit-linear-gradient(#9b886b, #f1e3c5); /* Chrome & Safari */
+	background: -moz-linear-gradient(#9b886b, #f1e3c5); /* Firefox */
 	width: 70%;
 	margin: 0 auto;
 	font-family: 'Roboto Slab', serif;
 	font-size: 1em;
-	box-shadow: 0 0 10px rgba(82, 67, 62, 0.5);
+	box-shadow: 0 0 10px rgba(82, 67, 62, 0.8);
 }
 
 
@@ -21,7 +24,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
 	color: #fff;
-	margin-top: 200px;
+	margin-top: 250px;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 	
@@ -39,6 +42,28 @@ h3 {
 }
 
 
+/****** LINKS ******/	
+	
+a:link {
+	color: #372f3e;
+	text-decoration: none;
+}
+	
+a:visited {
+	color: #372f3e;
+}
+	
+a:hover {
+	color: #b22422;
+	text-decoration: underline;
+}
+	
+a:active {
+	color: #e5cb54;
+	text-decoration: none;
+}
+
+
 /****** HEADER ******/
 
 #header {
@@ -46,7 +71,7 @@ h3 {
 	padding: 20px 0;
 	background:url(../images/truck.jpg) no-repeat;
 	background-size:100% 100%;
-	height:300px;
+	height:350px;
 }
 	
 
@@ -62,21 +87,15 @@ h3 {
 /****** SECTIONS ******/	
 
 #contactSection {
-	background-color: #99857a;
 	padding: 40px;
 	line-height: 1.7em;
+	overflow: auto;
 }
 	
 #historySection {
-	background-color: #f1e3c5;
 	line-height: 1.4em;
 	padding: 20px;
 }
-
-#photoSection {
-	margin: 0 auto;
-}
-
 	
 
 /****** NAVIGATION ******/
@@ -102,8 +121,19 @@ h3 {
 	text-decoration: none;
 }
 
+#navigation a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
 #navigation a:hover {
+	color: #b22422;
+	text-decoration: underline;
+}
+
+#navigation a:active {
 	color: #e5cb54;
+	text-decoration: none;
 }
 
 li#historyIcon {
@@ -124,29 +154,6 @@ li#photosIcon {
 li#contactIcon {
 	background: url(../images/icons/contactIcon.png) no-repeat top center;
 	padding:70px;
-}
-
-	
-	
-/****** LINKS ******/	
-	
-a:link {
-	color: #e5cb54;
-	text-decoration: none;
-}
-	
-a:visited {
-	color: #b22422;
-}
-	
-a:hover {
-	color: #37243d;
-	text-decoration: underline;
-}
-	
-a:active {
-	color: #e5cb54;
-	text-decoration: none;
 }
 	
 
