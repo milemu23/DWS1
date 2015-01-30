@@ -314,6 +314,7 @@ input:focus, textarea:focus {
 	background-color: #e7e0bc;
 	outline: none;
 	border: 2px solid #b22422 !important;
+	box-shadow: 0 0 10px rgba(179, 36, 24, .6);
 }
 
 .button {
