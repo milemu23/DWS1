@@ -5,6 +5,25 @@
 		<title>Munksgard Service, Inc.</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css" >
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+<!-- SMOOTH SCROLL -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				  var target = $(this.hash);
+				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				  if (target.length) {
+					$('html,body').animate({
+					  scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				  }
+				}
+			  });
+			});
+		</script>
+<!-- End of SMOOTH SCROLL -->
 	</head>
 	<body>
 		<div id="header">
@@ -13,14 +32,14 @@
         <!-- end header div -->
 	
 <!--NAVIGATION -->	
-			
-		<ul id="navigation">
-			<li id="historyIcon"> <a href="#history">History</a></li>
-			<li id="servicesIcon"><a href="#services">Services</a></li>
-			<li id="photosIcon"><a href="#photos">Photos</a></li>
-			<li id="contactIcon"><a href="#contact">Contact</a></li>
-		</ul>
-	  
+		<nav>	
+			<ul>
+				<li id="historyIcon"> <a href="#history">History</a></li>
+				<li id="servicesIcon"><a href="#services">Services</a></li>
+				<li id="photosIcon"><a href="#photos">Photos</a></li>
+				<li id="contactIcon"><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>	  
 	  
 <!-- HISTORY -->
 	  
@@ -29,11 +48,11 @@
 			<h2 id="history">History</h2>
 		</div><!-- end sectionHeader div -->
 	  
-	  	<div id="historySection">
+	  	<section id="historySection">
 	  
 			<h3>Three Generations of Service</h3><br />
 	  
-	  		<div id="content">
+	  		<article id="content">
 	  			<div id="columnTop">
 	  				<p><em>Munksgard Towing. <strong>In the Family Since 1932.</strong></em></p>
 	  			</div> <!-- end columnTop -->
@@ -46,9 +65,9 @@
 					<p> In 1947, when his wife, Alma, died he sold the garage. Then Chet and Glen Logan went into business at Pennzoil Gas Station, one of the largest garages in Warren. Chet went to Florida for a while then returned home. And then Chet started the towing business that his father had begun thirty years before.</p>
 					<p> In 1977, Chet sold the towing service and began working for the Howard Tree Company. Two years later the business was restarted again by Chet’s son, Jon. Today, the business continues as Munksgard Service in Warren, Jon and Cindy Munksgard. All Chet’s sons and grandchildren have been involved in someway or another.</p>
 				</div> <!-- end columnRight -->
-			</div> <!-- end content -->
+			</article> <!-- end content article -->
 			
-		</div><!--end historySection div -->
+		</section><!--end historySection -->
 		
 <!-- SERVICES -->
 
@@ -56,7 +75,7 @@
 			<h2 id="services">Services</h2>
 		</div><!-- end sectionHeader div -->
 		
-		<div id="servicesSection">
+		<section id="servicesSection">
 				<ul>
 					<li>Specialize in Exhaust Systems</li>
 					<li>Specialize in Stainless Steel Exhaust Systems</li>
@@ -64,7 +83,38 @@
 					<li>Major & Minor Automotive Repair</li>
 					<li>State Inspections</li>
 				</ul>
-		</div> <!-- end ServicesSection -->
+		</section> <!-- end ServicesSection -->
+		
+		<!-- HOURS -->
+		<aside>
+			<table>
+				<tr>
+					<th scope="col"><h2>Days</h2></th>
+					<th scope="col"><h2>Hours</h2></th>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td>8:30am to 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>8:30am to 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>8:30am to 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>8:30am to 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>8:30am to 5:00pm</td>
+				</tr>
+			</table>
+			
+		</aside>
 
 
 <!-- PHOTOS -->
@@ -73,7 +123,7 @@
 			<h2 id="photos">Photos</h2>
 		</div><!-- end sectionHeader div -->	
 		
-		<div id="photoSection">
+		<section id="photoSection">
 			<figure>
 				<a href="images/garageFull.jpg"><img src="images/garageThumb.jpg" alt="Garage" title="Garage" /></a>
 				<figcaption>
@@ -94,14 +144,14 @@
 				Chet Munksgard
 				</figcaption>
 			</figure>
-		</div><!-- end photoSection div -->
+		</section><!-- end photoSection -->
 		
 <!-- CONTACT -->
 		<div class="sectionHeader">	
 				<h2 id="contact">Contact</h2>
 		</div><!-- end sectionHeader div -->
 		  
-		<div id="contactSection">
+		<section id="contactSection">
 	  		<div class="columnLeft">
 			  	<p>911 Fourth Avenue<br />
 		  		Warren, Pennsylvania 16365</p>
@@ -112,9 +162,68 @@
 	  			[f] 814.726.5724<br />
 	  			[e] <a href="mailto:munksgardservice@atlanticbbn.net">munksgardservice@atlanticbbn.net</a></p>
 	  		</div><!-- end columnRight -->
+	  	</section><!-- end contactSection  -->
 		
-		</div><!-- end contactSection div -->
+<!-- FORM -->
+		<aside>
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Your Info:</legend>
+					<p>
+						<label class="title" for="name">Your name:</label>
+						<input type="text" name="name" id="name" placeholder="Full Name" required>
+						<br />
+						<label class="title" for="email">Your email:</label>
+						<input type="email" name="email" id="email" placeholder="Email Address" required>
+					</p>
+					<p>
+						Will you drop off or wait for your car?
+						<br />
+						<label class="title" for="drop">Drop Off</label>
+						<input type="radio" name="drop" id="drop" value="drop">
+						<br />
+						<label class="title" for="wait">Wait</label>
+						<input type="radio" name="wait" id="wait" value="wait">
+						
+					</p>
+					<p>
+						<label for="problems" id="problems">
+						What problems are you having with your car?</label>
+						<textarea rows="4" cols="30" id="problems"></textarea>
+					</p>
+						
+				</fieldset>
+				<fieldset>
+					<legend>Your Car:</legend>
+					<p>
+						<label class="title" for="year">Car Year:</label>
+						<select name="year" id="year">
+							<option>2015</option>
+							<option>2014</option>
+							<option>2013</option>
+							<option>2012</option>
+							<option>2011</option>
+							<option>2010</option>
+							<option>2009</option>
+							<option>2008</option>
+							<option>2007</option>
+							<option>2006</option>
+						</select>
+						<br />
+						<label class="title" for="make">Car Make:</label>
+						<input type="text" name="make" id="make" placeholder="Car Make">
+						<br />
+						<label class="title" for="model">Car Model:</label>
+						<input type="text" name="model" id="model" placeholder="Car Model">
+					</p>
+					<input type="submit" class="button" id="button" value="Submit">
+				</fieldset>
+						
+		</aside>
+
 		
-	
+		<footer>
+		©2015 Munksgard Service, Inc | Designed and Developed by <a href="http://www.michellemunksgard.com">Michelle Munksgard</a>
+		</footer><!-- end footer -->
 	</body>
 </html>

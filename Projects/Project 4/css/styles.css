@@ -89,9 +89,11 @@ a:active {
 
 #contactSection {
 	line-height: 1.7em;
-	overflow: auto;
 	margin: 0 8%;
 	padding: 20px 0;
+	width: 50%;
+	float:left;
+	overflow: auto;
 }
 	
 #historySection {
@@ -104,42 +106,47 @@ a:active {
 	padding: 20px 0;
 }
 
+#servicesSection {
+	width: 50%;
+	float:left;
+}
+
 
 /****** NAVIGATION ******/
 
-#navigation {
+nav {
 	background-color: #52433e;
 	height: 60px;
 	text-align: center;
-	padding: 90px 0 0;
+	padding: 80px 0 10px 0;
 	font-size: 1.15em;
 	margin: 0;
 	border-top: 10px solid #e5cb54;
 }
 	
-#navigation li {
+nav li {
 	display: inline;
 	padding:30px;
 	
 }
 	
-#navigation a {
-	color: #fff;
+nav a, footer a {
+	color: #fff !important;
 	text-decoration: none;
 }
 
-#navigation a:visited {
-	color: #fff;
+nav a:visited, footer a:visited {
+	color: #fff !important;
 	text-decoration: none;
 }
 
-#navigation a:hover {
-	color: #b22422;
+nav a:hover, footer a:hover {
+	color: #b22422 !important;
 	text-decoration: underline;
 }
 
-#navigation a:active {
-	color: #e5cb54;
+nav a:active, footer a:active {
+	color: #e5cb54 !important;
 	text-decoration: none;
 }
 
@@ -189,6 +196,7 @@ ol {
 	list-style-type: square;
 }
 	
+	
 /****** Columns ******/
 
 #content {
@@ -203,15 +211,147 @@ ol {
 	padding: 10px;
 }
 
-#columnLeft {
+.columnLeft {
 	clear:left;
 }
 
-#columnLeft, #columnRight {
+.columnLeft, .columnRight {
 	width: 40%;
 	float:left;
 	padding: 10px;
 }
 
+
+/****** ASIDE ******/
+aside {
+	display: block;
+	float:left;
+	width:30%;
+	margin: 30px 0;
+}
+
+table {
+	width: 100%;
+}
+
+table, td, th {
+	border: 2px solid #52433e;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px;
+}
+
+th {
+	background-color: #bfb2ae;
+	text-transform: uppercase;
+	font-size: .9em;
+	text-align: center;
+}
+
+tr {
+	background-color: #fef8ee;
+	text-align: left
+}
+
+tr:hover {
+	background-color: #b22422;
+	color: #fff;
+}
+
+
+/****** FORM ******/
+form {
+	width: 80%;
+	font-size: .95em;
+}
+
+fieldset {
+	width: 100%;
+	margin: 0px;
+	background-color: #fef8ee;
+}
+
+legend {
+	color:#52433e;
+	font-weight: bold;
+}
+
+.title {
+	width: 90px;
+	float: left;
+	padding: 0px 15px 0px 0px;
+	clear: left;
+	margin:5px 0;
+}
+
+input {
+	width: 150px;
+	height: 20px;
+	margin: 5px;	
+	border: 1px solid #52433e;
+	float: left;
+	clear: float;
+}
+
+form p {
+	clear:both;
+}
+
+textarea {
+	margin: 10px 0;
+	padding-right: 5px;
+	float:right;
+	width: 97%;
+}
+
+input:hover, textarea:hover {
+	background-color: #fef8ee;
+	border: 1px solid #b22422
+}
+
+input:focus, textarea:focus {
+	background-color: #e7e0bc;
+}
+
+.button {
+	background: url("../images/button.png") no-repeat 0 0;
+	height: 37px;
+	width: 93px;
+	color:#fff;
+	text-align: right;
+	border: none;
+	padding:0 10px;
+	cursor: pointer;
+	font-size: .9em;
+	float:right;
+	margin: 15px 5px 15px 0;
+	clear: both;
+}
+
+.button:hover {
+	background: url("../images/button.png") no-repeat 0 -37px;
+	height: 37px;
+	width: 93px;
+	color:#000;
+	text-align: right;
+	border: none;
+	padding:0 10px;
+	cursor: pointer;
+	font-size: .9em;
+}
+
+
+/****** FOOTER ******/
+footer {
+	background-color: #52433e;
+	color: #f1e3c5;
+	font-size: .7em;
+	height:35px;
+	text-align: center;
+	padding-top: 10px;
+	clear:both;
+}
 
 	
