@@ -312,6 +312,8 @@ input:hover, textarea:hover {
 
 input:focus, textarea:focus {
 	background-color: #e7e0bc;
+	outline: none;
+	border: 2px solid #b22422 !important;
 }
 
 .button {
